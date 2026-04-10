@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyanshu | Portfolio</title>
-    <img src="assets/dp.jpeg" alt="My Photo" class="profile">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,12 +24,18 @@
     <!-- Hero Section -->
     <section id="home">
         <h1>Hello, I'm Priyanshu 👋</h1>
-        <p>Cyber Security Student | Developer | Tech Enthusiast</p>
+
+        <!-- Profile Image -->
+        <img src="assets/dp.jpeg" alt="My Photo" class="profile">
+
+        <!-- Typing Animation -->
+        <p id="typing"></p>
+
         <button onclick="scrollToSection('projects')">View Projects</button>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="hidden">
         <h2>About Me</h2>
         <p>
             I am a BTech Cyber Security student passionate about building secure systems,
@@ -39,20 +44,23 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="hidden">
         <h2>My Projects</h2>
 
         <div class="project">
+            <img src="assets/project1.png" alt="Project" width="100%">
             <h3>Smart Hydration Bottle</h3>
             <p>IoT-based project to track water intake and improve health.</p>
         </div>
 
         <div class="project">
+            <img src="assets/project2.png" alt="Project" width="100%">
             <h3>Portfolio Website</h3>
             <p>A personal website to showcase my skills and projects.</p>
         </div>
 
         <div class="project">
+            <img src="assets/project3.png" alt="Project" width="100%">
             <h3>Cyber Security Toolkit</h3>
             <p>Collection of scripts and tools for security testing.</p>
         </div>
@@ -60,10 +68,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="hidden">
         <h2>Contact Me</h2>
         <p>Email: priyanshu@example.com</p>
-        <p>GitHub: https://github.com/yourusername</p>
+        <p>GitHub: https://github.com/priyanshu-0-1</p>
     </section>
 
     <!-- Footer -->
