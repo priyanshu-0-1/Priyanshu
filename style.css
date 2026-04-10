@@ -68,6 +68,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* centers everything */
     background: linear-gradient(to right, #020617, #0f172a);
 }
 
@@ -77,24 +78,26 @@ section {
     text-shadow: 0 0 10px #38bdf8;
 }
 
-/* Profile Image */
+/* ✅ FIXED PROFILE IMAGE */
 .profile {
     width: 150px;
     height: 150px;
+    max-width: 150px;     /* prevents stretching */
+    
     border-radius: 50%;
     object-fit: cover;
 
-    margin: 20px auto;
     display: block;
+    margin: 20px auto;
 
     border: 3px solid #38bdf8;
-    animation: glow 2s infinite alternate;
+    box-shadow: 0 0 15px #38bdf8;
 }
 
 /* Glow Animation */
 @keyframes glow {
     from { box-shadow: 0 0 10px #38bdf8; }
-    to { box-shadow: 0 0 30px #38bdf8; }
+    to { box-shadow: 0 0 25px #38bdf8; }
 }
 
 /* Typing Cursor */
@@ -146,6 +149,7 @@ button:hover {
 }
 
 .project img {
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -180,7 +184,7 @@ footer {
     transform: translateY(0);
 }
 
-/* Responsive (Mobile) */
+/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         display: none;
